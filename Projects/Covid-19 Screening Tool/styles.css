@@ -1,0 +1,104 @@
+#covidlogo {
+    height: 65px;
+    width: 70px;
+    margin-top: 28px;
+}
+
+.col .h21 {
+    margin-top: 20px;
+}
+
+#btn1 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+#InfoLogo {
+    height: 70px;
+    width: 72px;
+}
+
+#arrowicon {
+    height: 30px;
+    width: 30px;
+}
+
+#person {
+    height: 258px;
+    width: 110px;
+    margin-top: 50px;
+}
+
+.btn-primary {
+    height: 45px;
+    width: 100%;
+}
+
+#c1 {
+    background-color: #E9ECEF;
+    width: 100%;
+}
+
+#header {
+    height: 62px;
+    background-color: #E9ECEF;
+}
+
+#covidlogo1 {
+    height: 65px;
+    width: 70px;
+    transform: translate(20%,-70%);
+}
+
+.centerdiv {
+    padding-top: 65px;
+    padding-bottom: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col h2 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -20px;
+}
+
+.col h4 {
+    font-size: 24px;
+}
+
+.btn {
+    margin-top: 15px;
+}
+
+.col #h21 {
+    margin-top: 20px;
+    font-size: x-large;
+}
+
+#h211 {
+    font-size: 30px;
+}
+
+#h51 {
+    font-weight: bolder;
+    text-align: left;
+}
+
+.col p {
+    text-align: left;
+}
+
+#col1 {
+    margin-left: 12px;
+}
+
+#h24 {
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+#col4 {
+    padding-left: -30px;
+}
