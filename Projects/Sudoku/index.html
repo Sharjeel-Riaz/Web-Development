@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="fff" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./Assets/icon.png" type="image/x-icon" />
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@400;500;600;700&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sudoku</title>
+    <!--Script-->
+  </head>
+
+  <body>
+    <!-- Start Top Nav -->
+    <nav>
+      <div class="nav-container">
+        <a href="#" class="nav-logo">Sudoku</a>
+        <div class="dark-mode-toggle" id="dark-mode-toggle">
+          <input type="checkbox" class="checkbox" id="checkbox" />
+          <label for="checkbox" class="label">
+            <i class="bx bxs-moon"></i>
+            <i class="bx bxs-sun"></i>
+            <div class="ball"></div>
+          </label>
+        </div>
+      </div>
+    </nav>
+    <!-- End Top Nav -->
+
+    <!-- Main -->
+    <div class="main">
+      <div class="screen">
+        <!-- Start Screen -->
+        <div class="start-screen" id="start-screen">
+          <input
+            type="text"
+            class="input-name"
+            id="input-name"
+            placeholder="Your Name"
+            maxlength="12"
+          />
+          <div class="btn" id="btn-level">Easy</div>
+          <div class="btn" id="btn-continue">Continue</div>
+          <div class="btn btn-blue" id="btn-play">New Game</div>
+        </div>
+        <!-- End Start Screen -->
+
+        <!-- Game Screen -->
+        <div class="main-game active">
+          <div class="main-sudoku-grid">
+            <!-- Grid Cells -->
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <!-- End Cells -->
+          </div>
+        </div>
+        <!-- End Game Screen -->
+      </div>
+    </div>
+    <!-- End Main -->
+
+    <!-- Attaching JS Scripts -->
+    <script src="constant.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
