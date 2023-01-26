@@ -10,17 +10,13 @@ document.querySelector("#checkbox").addEventListener("click", () => {
 });
 
 // Audio Button Functionality
-var music = document.getElementById("music");
-var icon = document.getElementById("icon");
-icon.onclick = function () {
-  if (music.paused) {
-    music.play();
-    icon.src = "Assets/pause.png";
-  } else {
-    music.pause();
-    icon.src = "Assets/play.png";
-  }
-};
+const music = document.getElementById("music");
+const icon = document.getElementById("icon");
+icon.addEventListener("click", () => {
+  music.paused
+    ? (music.play(), (icon.src = "Assets/pause.png"))
+    : (music.pause(), (icon.src = "Assets/play.png"));
+});
 
 // Initial Values
 
