@@ -30,6 +30,9 @@
     <nav>
       <div class="nav-container">
         <a href="#" class="nav-logo">Sudoku</a>
+        <div class="audio-toggle" id="audio-toggle">
+          <img src="Assets/play.png" id="icon" alt="Play icon" />
+        </div>
         <div class="dark-mode-toggle" id="dark-mode-toggle">
           <input type="checkbox" class="checkbox" id="checkbox" />
           <label for="checkbox" class="label">
@@ -197,6 +200,11 @@
       </div>
     </div>
     <!-- End Main -->
+
+    <!-- Attaching Audio -->
+    <audio id="music">
+      <source src="Assets/Music.mp3" type="audio/mp3" />
+    </audio>
 
     <!-- Attaching JS Scripts -->
     <script src="sudoku.js"></script>

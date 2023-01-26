@@ -148,6 +148,23 @@ nav {
   border: 1.2px solid var(--blue);
 }
 
+/* Audio Button Toggle */
+.audio-toggle {
+  position: absolute;
+  cursor: pointer;
+  right: 120px;
+}
+
+#icon {
+  width: 35px;
+  height: 35px;
+  transition: ease-in-out 0.2s;
+}
+
+#icon:active {
+  transform: translateY(4px);
+}
+
 /* Main */
 /* Start Screen */
 .main {

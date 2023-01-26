@@ -9,6 +9,19 @@ document.querySelector("#checkbox").addEventListener("click", () => {
     .setAttribute("content", isDarkMode ? "#1a1a2e" : "#fff");
 });
 
+// Audio Button Functionality
+var music = document.getElementById("music");
+var icon = document.getElementById("icon");
+icon.onclick = function () {
+  if (music.paused) {
+    music.play();
+    icon.src = "Assets/pause.png";
+  } else {
+    music.pause();
+    icon.src = "Assets/play.png";
+  }
+};
+
 // Initial Values
 
 // screens
