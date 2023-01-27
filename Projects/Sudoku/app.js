@@ -20,12 +20,14 @@ icon.addEventListener("click", () => {
 
 // Initial Values
 
-// screens
+// Screens
 const start_screen = document.querySelector("#start-screen");
 const game_screen = document.querySelector("#game-screen");
 const pause_screen = document.querySelector("#pause-screen");
 const result_screen = document.querySelector("#result-screen");
 // -------
+
+// Fields
 const cells = document.querySelectorAll(".main-grid-cell");
 
 const name_input = document.querySelector("#input-name");
@@ -49,12 +51,12 @@ let su = undefined;
 let su_answer = undefined;
 
 let selected_cell = -1;
-
 // --------
 
+// Parsing data from JSON
 const getGameInfo = () => JSON.parse(localStorage.getItem("game"));
 
-// add space for each 9 cells
+// Adding space for each of the 9 cells
 const initGameGrid = () => {
   let index = 0;
 
@@ -69,6 +71,7 @@ const initGameGrid = () => {
 };
 // -------
 
+// Rendering methods
 const setPlayerName = (name) => localStorage.setItem("player_name", name);
 const getPlayerName = () => localStorage.getItem("player_name");
 
@@ -84,10 +87,10 @@ const clearSudoku = () => {
 };
 
 const initSudoku = () => {
-  // clear old sudoku
+  // To clear old sudoku
   clearSudoku();
   resetBg();
-  // generate sudoku puzzle here
+  // Generating board values
   su = sudokuGen(level);
   su_answer = [...su.question];
 
@@ -95,7 +98,7 @@ const initSudoku = () => {
 
   saveGameInfo();
 
-  // show sudoku to div
+  // Sending the values onto the board
   for (let i = 0; i < Math.pow(CONSTANT.GRID_SIZE, 2); i++) {
     let row = Math.floor(i / CONSTANT.GRID_SIZE);
     let col = i % CONSTANT.GRID_SIZE;
@@ -123,7 +126,7 @@ const loadSudoku = () => {
 
   level_index = game.level;
 
-  // show sudoku to div
+  // Recieving the values onto the board
   for (let i = 0; i < Math.pow(CONSTANT.GRID_SIZE, 2); i++) {
     let row = Math.floor(i / CONSTANT.GRID_SIZE);
     let col = i % CONSTANT.GRID_SIZE;
@@ -264,11 +267,11 @@ const initNumberInputEvent = () => {
       if (!cells[selected_cell].classList.contains("filled")) {
         cells[selected_cell].innerHTML = index + 1;
         cells[selected_cell].setAttribute("data-value", index + 1);
-        // add to answer
+        // Adding to answer
         let row = Math.floor(selected_cell / CONSTANT.GRID_SIZE);
         let col = selected_cell % CONSTANT.GRID_SIZE;
         su_answer[row][col] = index + 1;
-        // save game
+        // Save game
         saveGameInfo();
         // -----
         removeErr();
@@ -278,7 +281,7 @@ const initNumberInputEvent = () => {
           cells[selected_cell].classList.remove("zoom-in");
         }, 500);
 
-        // check game win
+        // Compare results
         if (isGameWin()) {
           removeGameInfo();
           showResult();
